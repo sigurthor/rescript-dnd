@@ -19,10 +19,13 @@
   "bs-dev-dependencies": [
     "rescript-classnames"
   ],
-  "reason": {
-    "react-jsx": 3
-  },
-  "refmt": 3,
+   "jsx": {
+        "version": 4,
+        "mode": "classic",
+        "v3-dependencies": [
+            "rescript-dnd"
+        ]
+    },
   "bsc-flags": [
     "-open Belt"
   ],
