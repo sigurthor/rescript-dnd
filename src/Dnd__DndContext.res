@@ -37,14 +37,8 @@ module type T = {
   let useDnd: unit => t
 
   module Provider: {
-    let make: React.component<{"value": t, "children": React.element}>
-    let makeProps: (
-      ~value: t,
-      ~children: React.element,
-      ~key: string=?,
-      unit,
-    ) => {"value": t, "children": React.element}
-  }
+    let make: React.Context.t<t>
+   }
 }
 
 module Make = (Item: DndEntry, Container: DndEntry) => {
@@ -70,7 +64,6 @@ module Make = (Item: DndEntry, Container: DndEntry) => {
 
   module Provider = {
     let make = x->React.Context.provider
-    let makeProps = ReactContext.makeProps
   }
 
   let useDnd = () => React.useContext(x)
