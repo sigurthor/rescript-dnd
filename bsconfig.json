@@ -19,18 +19,18 @@
   "bs-dev-dependencies": [
     "rescript-classnames"
   ],
-   "jsx": {
-        "version": 4,
-        "mode": "classic",
-        "v3-dependencies": [
-            "rescript-dnd"
-        ]
-    },
+  "jsx": {
+    "version": 4,
+    "mode": "classic"
+  },
   "bsc-flags": [
     "-open Belt"
   ],
   "ppx-flags": [
-    ["rescript-logger/ppx", "--lib=rescript-dnd"]
+    [
+      "rescript-logger/ppx",
+      "--lib=rescript-dnd"
+    ]
   ],
   "package-specs": {
     "module": "es6",

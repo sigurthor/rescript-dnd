@@ -936,10 +936,10 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@rescript/react@>=0.10.3":
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.10.3.tgz#a2a8bed6b017940ec26c2154764b350f50348889"
-  integrity sha512-Lf9rzrR3bQPKJjOK3PBRa/B3xrJ7CqQ1HYr9VHPVxJidarIJJFZBhj0Dg1uZURX+Wg/xiP0PHFxXmdj2bK8Vxw==
+"@rescript/react@0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.11.0.tgz#d2545546d823bdb8e6b59daa1790098d1666f79e"
+  integrity sha512-RzoAO+3cJwXE2D7yodMo4tBO2EkeDYCN/I/Sj/yRweI3S1CY1ZBOF/GMcVtjeIurJJt7KMveqQXTaRrqoGZBBg==
 
 "@types/q@^1.5.1":
   version "1.5.4"
@@ -4409,10 +4409,10 @@ rescript-webapi@0.6.1:
   resolved "https://registry.yarnpkg.com/rescript-webapi/-/rescript-webapi-0.6.1.tgz#b7e578c743b08e09f259938a6e9300c238020591"
   integrity sha512-I/eeHOcsUfWbCf6u15zd+rKxMz9awSjjdRa8eFtl2X+HjDNs0mJxoC4uFFK9dIazYcmY2VpuK5TTpOPXvdkhDw==
 
-rescript@10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/rescript/-/rescript-10.0.1.tgz#5b2da8a8bcfb994bed1eb24820bf10cfb9d8c440"
-  integrity sha512-XwO1GPDtoEU4H03xQE5bp0/qtSVR6YLaJRPxWKrfFgKc+LI36ODOCie7o9UJfgzQdoMYkkZyiTGZ4N9OQEaiUw==
+rescript@10.1.0-rc.5:
+  version "10.1.0-rc.5"
+  resolved "https://registry.yarnpkg.com/rescript/-/rescript-10.1.0-rc.5.tgz#d2eed3ae882e1a4def76d145f30957b3f7c33747"
+  integrity sha512-57/4oETx9s0uiCof1Yfo/SU3kyDE/AHf2RjMpIpdXeYhaa62C0f15cbLCAHehJEy/L6kJUHoQBzNqQ0OuumcSQ==
 
 resolve-from@^3.0.0:
   version "3.0.0"
