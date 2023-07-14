@@ -13,17 +13,17 @@ let reducer = (_state, action) =>
 @react.component
 let make = () => {
   let url = RescriptReactRouter.useUrl()
-  let route = React.useMemo1(() => url->Route.fromUrl, [url])
+  let route = React.useMemo(() => url->Route.fromUrl, [url])
 
   let (state, dispatch) = reducer->React.useReducer({mobileNavShown: false})
 
-  React.useEffect1(() => {
-    HideMobileNav->dispatch
+  React.useEffect(() => {
+    dispatch(HideMobileNav)
     None
   }, [route])
 
-  let showMobileNav = React.useCallback(() => ShowMobileNav->dispatch)
-  let hideMobileNav = React.useCallback(() => HideMobileNav->dispatch)
+  let showMobileNav = React.useCallback(() => ShowMobileNav->dispatch,[])
+  let hideMobileNav = React.useCallback(() =>  dispatch(HideMobileNav),[])
 
   <Container>
     <Nav route mobileNavShown=state.mobileNavShown hideMobileNav />

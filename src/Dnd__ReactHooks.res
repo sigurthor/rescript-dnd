@@ -1,10 +1,10 @@
 module Previous = {
   let hook = (v: 'a): option<'a> => {
-    let x = React.useRef(None)
+    let x= React.useRef(None)
     React.useEffect(() => {
       x.current = v->Some
       None
-    })
+    },[])
     x.current
   }
 }

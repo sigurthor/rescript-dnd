@@ -244,7 +244,7 @@ module Make = (Context: Context.T) => {
     React.useEffect(() => {
       ctxRef.current = ctx
       None
-    })
+    },[])
 
     let element = React.useRef(Js.Nullable.null)
 
